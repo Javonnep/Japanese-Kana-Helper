@@ -6,6 +6,10 @@ higarana = [
     "sa", "shi", "su", "se", "so",
     "ta", "chi", "tsu", "te", "to",
     "na", "ni", "nu", "ne", "no",
+    "ha", "hi", "fu", "he", "ho",
+    "ma", "mi", "mu", "me", "mo",
+
+    "ra", "ri", "ru", "re", "ro"
 ]
 
 ひらがな = [
@@ -13,9 +17,26 @@ higarana = [
     "か", "き", "く", "け", "こ",
     "さ", "し", "す", "せ", "そ",
     "た", "ち", "つ", "て", "と",
-    "な", "に", "ぬ", "ね", "の"
+    "な", "に", "ぬ", "ね", "の",
+    "は", "ひ", "ふ", "へ", "ほ",
+    "ま", "み", "む", "め", "も",
+
+    "ら", "り", "る", "れ", "ろ"
+
 ]
 
+mini = [
+    "ha", "hi", "fu", "he", "ho",
+    "ma", "mi", "mu", "me", "mo",
+
+    "ra", "ri", "ru", "re", "ro"
+]
+mini1 = [
+    "は", "ひ", "ふ", "へ", "ほ",
+    "ま", "み", "む", "め", "も",
+
+    "ら", "り", "る", "れ", "ろ"
+]
 
 def KanaTest(list, numOfWords, numOfKanaPerWord):
     for i in range(numOfWords):
@@ -25,8 +46,8 @@ def KanaTest(list, numOfWords, numOfKanaPerWord):
         # print("")
 
 
-KanaTest(higarana, 2, 4)
+KanaTest(mini, 5, 4)
 print("")
-KanaTest(ひらがな, 2, 3)
+KanaTest(mini1, 5, 4)
 print("")
 print("")
